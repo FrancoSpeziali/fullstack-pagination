@@ -137,7 +137,16 @@ Being able to skip indexes is critical for any application which uses pagination
 
 2. Use the `skip(n)` method to tell our query to skip a certain number of records, where `n` is the number of results you will skip.
 
-## Task 10 - Setting up CORS
+## Task 10 - Selecting certain fields
+
+Still too much data!
+
+1. Choose some fields you wish to return and use the `select()` method to limit your results to those fields. For example:
+   `select('date')` will limit your results to the `date` field from your collection 
+
+> Hint: You can pass in a single string or an array of strings
+
+## Task 11 - Setting up CORS
 
 To prevent problems with the Same Origin Security Policy, we will use the CORS middleware
 
@@ -149,7 +158,7 @@ This will prevent the dreaded same origin policy error in your browser.
 
 > Note: Remember to run your middleware before any of your routes!
 
-## Task 11 - Running and testing our API
+## Task 12 - Running and testing our API
 
 Now everything is setup, test your API with a testing tool such as Postman or Insomnia, (or any other tool).
 
