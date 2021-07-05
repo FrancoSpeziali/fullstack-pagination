@@ -137,6 +137,8 @@ Being able to skip indexes is critical for any application which uses pagination
 
 2. Use the `skip(n)` method to tell our query to skip a certain number of records, where `n` is the number of results you will skip.
 
+> Important! `skip()` expects a number, but each property in `request.params` is a string. You should convert this number into a string before you can use it in `skip()`
+
 ## Task 10 - Selecting certain fields
 
 Still too much data!
